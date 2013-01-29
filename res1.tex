@@ -1,0 +1,82 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{}
+\familyname{Nathan Burgers}
+\title{Web Application \& iOS Developer}                          % optional, remove / comment the line if not wanted
+\address{65 Beachridge Drive}{14051 East Amherst}    % optional, remove / comment the line if not wanted
+\mobile{+1~(716)~263~8592}                     % optional, remove / comment the line if not wanted
+%\phone{+1~()~678~901}                      % optional, remove / comment the line if not wanted
+\email{nburgers@buffalo.edu}                          % optional, remove / comment the line if not wanted
+\homepage{nateb.me}                    % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}            % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2012-Present}{Computer Science}{University at Buffalo}{}{\textit{3.9/4.0}}{}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2011-Present}{iOS \& Web Developer}{Refulgent Software LLC.}{Amherst}{New York}
+{Work with a team of developers creating a full-stack restaurant Point of Sale system. Design, develop, and maintain secure automated financial systems, analytics, and administrative infrastructure.
+\newline
+\textbf{Detailed achievements:}
+\begin{itemize}%
+\item Actively worked with a team on a large-scale Objective-C code-base
+\item Implemented real-time, caching, full-screen iOS image carousel that handles live resizing and rotation under constrained memory conditions
+\item Automated entire application activation infrastructure
+  \begin{itemize}%
+  \item Developed online software store
+  \item Integrated with Shopify, Pipedrive, MailChimp, and other API's
+  \item Automated software licensing over SSL with HMAC verification
+  \item Encrypted sensitive client information via Salted BCrypt
+  \item Provided internal activation and analytics API
+  \item Created administrative interface
+  \end{itemize}
+\item Developed dynamic, back-end supported company website
+\end{itemize}}
+
+\section{Open Source Work}
+\cventry{2013-Present}{MLRTEMS}{Research under Professor Lukasz Ziarek}{University at Buffalo}{}
+{
+An extension of the MLton Standard-ML compiler for interfacing with the RTEMS real-time embedded systems executive, which aims to provide real-time guarantees to embedded functional programming.
+}
+
+\section{Extra Curricular Activity}
+\cvitem{2013-Present}{Participant of PennApps hackathon}
+\cvitem{2012-Present}{Member of UB ACM \& UB Hacking planning board}
+\cvitem{2012}{Volunteer Tutor at LEAP of Western New York}
+\cvitem{2009-2012}{Witness and Prosecuting Attorney in Williamsville North High School Mock Trial}
+
+\section{Technology Summary}
+\cvitem{Languages}{Objective-C, Ruby, Javascript, Java, Clojure, Standard-ML \newline LaTeX, HTML \& XML, CSS, JSON}
+%\cvitem{Frameworks}{Ruby on Rails, iOS application stack (including Core Data)}
+\cvitem{Databases}{Postgres, SQLite, Neo4j}
+%\cvitem{VCS}{Git \& Github, Subversion}
+%\cvitem{Systems}{Mac OS X, iOS, Arch Linux, Red Hat Linux}
+
+\end{document}
