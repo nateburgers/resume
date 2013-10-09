@@ -13,16 +13,16 @@
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 \setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \firstname{}
 \familyname{Nathan Burgers}
-\title{Web Application \& iOS Developer}                          % optional, remove / comment the line if not wanted
+\title{iOS \& Backend Systems Developer}                          % optional, remove / comment the line if not wanted
 \address{65 Beachridge Drive}{14051 East Amherst}    % optional, remove / comment the line if not wanted
-\mobile{+1~(716)~263~8592}                     % optional, remove / comment the line if not wanted
+\mobile{+1~(716)~697~6060}                     % optional, remove / comment the line if not wanted
 %\phone{+1~()~678~901}                      % optional, remove / comment the line if not wanted
 \email{nburgers@buffalo.edu}                          % optional, remove / comment the line if not wanted
 \homepage{nateb.me}                    % optional, remove / comment the line if not wanted
@@ -39,25 +39,23 @@
 \section{Education}
 \cventry{2012-Present}{Computer Science}{University at Buffalo}{}{\textit{3.9/4.0}}{}
 
-\section{Experience}
+\section{Professional Experience}
 %\subsection{Vocational}
 \cventry{2011-Present}{iOS \& Web Developer}{Refulgent Software LLC.}{Amherst}{New York}
-{Work with a team of developers creating a full-stack restaurant Point of Sale system. Design, develop, and maintain secure automated financial systems, analytics, and administrative infrastructure.
+{Work with a team of developers creating a full-stack restaurant Point of Sale system. Design, develop, and maintain secure automated financial systems.
 \newline
 \textbf{Detailed achievements:}
 \begin{itemize}%
 \item Actively worked with a team on a large-scale Objective-C code-base
-\item Implemented real-time, caching, full-screen iOS image carousel that handles live resizing and rotation under constrained memory conditions
+\item Developed caching scheme for large images on devices with limited memory and processing capability.
+\item Created internal Functional Objective-C libraries providing: infinite data structures, implicit memoization, and parser generation, etc.
 \item Automated entire application activation infrastructure
   \begin{itemize}%
-  \item Developed online software store
-  \item Integrated with Shopify, Pipedrive, MailChimp, and other API's
-  \item Automated software licensing over SSL with HMAC verification
-  \item Encrypted sensitive client information via Salted BCrypt
+  \item Automated software licensing over encrypted, timestamped channels
+  \item Encrypted sensitive client information
   \item Provided internal activation and analytics API
-  \item Created administrative interface
+  \item Developed API frontend
   \end{itemize}
-\item Developed dynamic, back-end supported company website
 \end{itemize}}
 
 \section{Open Source Work}
@@ -66,17 +64,15 @@
 An extension of the MLton Standard-ML compiler for interfacing with the RTEMS real-time embedded systems executive, which aims to provide real-time guarantees to embedded functional programming.
 }
 
-\section{Extra Curricular Activity}
-\cvitem{2013-Present}{Participant of PennApps hackathon}
-\cvitem{2012-Present}{Member of UB ACM \& UB Hacking planning board}
-\cvitem{2012}{Volunteer Tutor at LEAP of Western New York}
-\cvitem{2009-2012}{Witness and Prosecuting Attorney in Williamsville North High School Mock Trial}
+\section{Honors and Awards}
+\cvitem{2013} {Creator of the Lark Language, Top 10, Most Technically Challenging, and Best iOS App at MHacks \newline \url{github.com/nateburgers/LarkDemo}}
+\cvitem{2013} {iOS Developer of Playper, Top 10 at HackMIT \newline \url{github.com/nateburgers/Playper}}
+\cvitem{2013} {Backend Audio Developer of Theramixer, Second place at HackPrinceton \newline \url{github.com/buffalohackers/Theramixer}}
+\cvitem{2013} {WebRTC Developer of WebDrop, First Place at Hack Upstate \newline \url{github.com/buffalohackers/WebDrop}}
 
-\section{Technology Summary}
-\cvitem{Languages}{Objective-C, Ruby, Javascript, Java, Clojure, Standard-ML \newline LaTeX, HTML \& XML, CSS, JSON}
-%\cvitem{Frameworks}{Ruby on Rails, iOS application stack (including Core Data)}
-\cvitem{Databases}{Postgres, SQLite, Neo4j}
-%\cvitem{VCS}{Git \& Github, Subversion}
-%\cvitem{Systems}{Mac OS X, iOS, Arch Linux, Red Hat Linux}
+\section{Skills}
+\cvitem{Development}{Languages and DSLs, Backend Server Systems, iOS}
+\cvitem{Languages}{Objective-C, Ruby, Javascript, Java, Clojure, Erlang, Standard-ML, Haskell \newline LaTeX, HTML \& XML, CSS, JSON}
+\cvitem{Databases}{Postgresql, Neo4j, Redis}
 
 \end{document}
